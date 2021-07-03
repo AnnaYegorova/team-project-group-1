@@ -1,6 +1,11 @@
+@import './utils/variables';
+@import './utils/visually-hidden';
+
 @import './base/common';
 @import './base/container';
 @import './base/section';
+
+// Components
 
 @import './layout/about';
 @import './layout/advantages';
@@ -14,6 +19,3 @@
 @import './layout/problems';
 @import './layout/program';
 @import './layout/reviews';
-
-@import './utils/variables';
-@import './utils/visually-hidden';

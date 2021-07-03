@@ -11,14 +11,16 @@ li {
     padding: 0;
 }
 
-.list {
+list {
     list-style: none;
 }
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
-.link {
+link {
     text-decoration: none;
 }
