@@ -1,1 +1,21 @@
+@import './base/common';
 @import './base/container';
+@import './base/section';
+
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+// Components
+
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/benefits';
+@import './layout/contacts';
+@import './layout/footer';
+@import './layout/guarantee';
+@import './layout/header';
+@import './layout/hero';
+@import './layout/how-we-do';
+@import './layout/problems';
+@import './layout/program';
+@import './layout/reviews';
