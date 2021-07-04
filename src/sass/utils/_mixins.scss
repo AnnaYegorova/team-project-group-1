@@ -30,7 +30,7 @@
     }
 }
 
-@mixin style-text($fW, $fS, $lh) {
+@mixin style-text($fw, $fw, $lh) {
     font-weight: $fw;
     font-size: $fs;
     line-height: decimal-round($lh / $fs, 2);
