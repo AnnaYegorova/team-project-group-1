@@ -24,3 +24,8 @@ img {
 link {
     text-decoration: none;
 }
+
+body {
+    font-family: var(--primary-font);
+    color: var(--primary-text-color);
+}
