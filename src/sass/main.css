@@ -38,4 +38,42 @@ link {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.teacher__list-icon {
+  fill: black;
+}
+
+.teacher__list-icon-logotip {
+  fill: #000;
+}
 /*# sourceMappingURL=main.css.map */
