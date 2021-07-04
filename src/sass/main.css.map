@@ -1,0 +1,26 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,CAAC;AACD,EAAE;AACF,EAAE,CAAC;EACC,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACb;;AAED,AAAA,IAAI,CAAC;EACD,UAAU,EAAE,IAAI;CACnB;;AAED,AAAA,GAAG,CAAC;EACA,OAAO,EAAE,KAAK;EACd,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,IAAI;CACf;;AAED,AAAA,IAAI,CAAC;EACD,eAAe,EAAE,IAAI;CACxB;;AIzBD,AAAA,YAAY,CAAC;EACT,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,GAAG;EACX,MAAM,EAAE,IAAI;EACZ,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EAEV,WAAW,EAAE,MAAM;EACnB,SAAS,EAAE,WAAW;EACtB,IAAI,EAAE,aAAa;EACnB,QAAQ,EAAE,MAAM;CACnB",
+    "sources": [
+        "main.scss",
+        "base/_common.scss",
+        "base/_container.scss",
+        "base/_section.scss",
+        "utils/_variables.scss",
+        "utils/_visually-hidden.scss",
+        "layout/_about.scss",
+        "layout/_advantages.scss",
+        "layout/_benefits.scss",
+        "layout/_contacts.scss",
+        "layout/_footer.scss",
+        "layout/_guarantee.scss",
+        "layout/_header.scss",
+        "layout/_hero.scss",
+        "layout/_how-we-do.scss",
+        "layout/_problems.scss",
+        "layout/_program.scss",
+        "layout/_reviews.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
