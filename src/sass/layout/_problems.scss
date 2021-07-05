@@ -1,6 +1,34 @@
+.container {
+    padding-top: 27px;
+}
 .problems {
     background-color: var(--secondary-bcg-color);
     color: var(--title-text-color);
+}
+h2 {
     @include style-text(800, 24px, 31px);
     letter-spacing: 0.03em;
+    padding-bottom: 39px;
+}
+.problems__text-accent-color {
+    color: var(--accent-color);
+}
+
+.problems__list {
+    background-color: var(--primary-bcg-color);
+    color: var(--title-text-color);
+}
+
+.container-small {
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+}
+@media screen and (min-width: 786px) {
+}
+@media screen and (min-width: 1366px) {
+    h2 {
+        @include style-text(800, 46px, 60px);
+    }
 }
