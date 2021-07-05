@@ -1,26 +1,25 @@
 <section class="contacts">
-<div class="container">
-    <h2 class="contacts-title">Registration for a free phone consultation on the nuances of English UPE</h2>
-    <p class="contacts-text">Leave a request for participation in a free lesson. A consultant will contact you and answer your questions</p>
-    <div class="contacts-input">
-        <input class="contacts-form-input" 
-                                type="text" 
-                                name="name" 
-                                id="name"
-                                minlength="2"
-                                required
-                                placeholder="Name*" 
-        />
-        <input class="contacts-form-input" 
-                                type="tel" 
-                                name="tel" 
-                                id="tel"
-                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                                title="096-111-11-11"
-                                required
-                                placeholder="Phone*"
-        />
-        <button class="contacts-form-button" type="submit">i want a free lesson</button>
+    <div class="container padding-container">
+        <h2 class="contacts-title">Registration for a <span class="accent-color">free</span> phone <span
+                class="accent-color">consultation</span> on the nuances of English UPE</h2>
+        <div class="contacts-text-menu">
+            <p class="contacts-text">Leave a request for participation in a <span class="accent-color">free
+                    lesson</span></p>
+            <p class="contacts-text">A consultant will contact you and answer your questions</p>
+        </div>
+        <form class="contacts-input">
+            <ul class="contacts-input-menu list">
+                <li class="contacts-input-item">
+                    <input class="contacts-form-input" type="text" name="name" id="name" minlength="2" required
+                        placeholder="Name*" title="Иван Иванов" />
+                </li>
+                <li class="contacts-input-item">
+                    <input class="contacts-form-input" type="tel" name="tel" id="tel"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="096-111-11-11" required
+                        placeholder="Phone*" />
+                </li>
+            </ul>
+            <button class="contacts-form-button" type="submit">i want a free lesson</button>
+        </form>
     </div>
-</div>
 </section>
