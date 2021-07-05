@@ -1,0 +1,55 @@
+.logo {
+    display: block;
+
+    @include style-text(800, 16px, 14px);
+    letter-spacing: 0.04em;
+
+    color: var(--primary-text-color);
+}
+.mobile-menu__logo {
+    color: var(--title-text-color);
+}
+.logo-flex {
+    display: flex;
+    align-items: center;
+}
+.logo__icon {
+    margin-left: 4px;
+    margin-right: 4px;
+    width: 14px;
+    height: 19px;
+    fill: var(--accent-color);
+}
+.logo__part {
+    margin-top: 4px;
+    font-weight: 700;
+    font-size: 5px;
+    line-height: 6px;
+
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+.logo__part--lower {
+    color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .logo__part {
+        margin-top: 5px;
+        font-size: 8px;
+        line-height: 10px;
+    }
+    .logo__icon {
+        width: 22px;
+        height: 30px;
+    }
+    .logo__part {
+        font-weight: 700;
+        font-size: 8px;
+        line-height: 10px;
+    }
+}

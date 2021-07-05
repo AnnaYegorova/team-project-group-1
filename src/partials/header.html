@@ -1,4 +1,4 @@
-<header class="header section">
+<header class="header">
     <div class="container">
         <nav class="header__nav">
             <a class="logo link" href="/">
@@ -14,34 +14,56 @@
                     english
                 </div>
             </a>
-
-            <div class="header__menu-container" id="header__menu-container" data-menu>
-                <ul class="nav-menu list">
-                    <li class="nav-menu__item"><a class="link" href="#program">Studying program</a></li>
-                    <li class="nav-menu__item"><a class="link" href="#about">about</a></li>
-                    <li class="nav-menu__item"><a class="link" href="#options">training options</a></li>
-                    <li class="nav-menu__item"><a class="link" href="#contacts">contacts</a></li>
-                </ul>
+            <ul class="nav-menu list">
+                <li class="nav-menu__item"><a class="nav-menu__link link curent" href="#program">Studying program</a></li>
+                <li class="nav-menu__item"><a class="nav-menu__link link" href="#about">About</a></li>
+                <li class="nav-menu__item"><a class="nav-menu__link link" href="#options">Training options</a></li>
+                <li class="nav-menu__item"><a class="nav-menu__link link" href="#contacts">Contacts</a></li>
+            </ul>
+            <div class="header--wrap">
                 <button class="modal-btn" type="button" data-modal-open>consultation by phone</button>
+                
+                <button type="button" class="header__mobile-menu-btn" data-menu-button>
+                    <svg class="header__icon-menu" width="35" height="35">
+                        <use class="header__icon-menu-burger" href="./images/icons/sprite.svg#icon-menu-burger"></use>
+                    </svg>
+                </button>
 
             </div>
-
-            <button type="button" class="header__mobile-menu-btn"
-                    aria-expanded="false"
-                    aria-controls="header__menu-container"
-                    data-menu-button>
-                <svg class="header__icon-menu" width="20" height="20" aria-lable="mobile menu switch">
-                    <use class="header__icon-menu-close" href="./images/icons/sprite.svg#icon-btn-close"></use>
-                    <use class="header__icon-menu-burger" href="./images/icons/sprite.svg#icon-menu-burger"></use>
-                </svg>
-            </button>
             
+<!--Всплывающее меню-->
+            <div class="mobile-menu" data-menu>
+                <div class="container mobile__menu-container">
+                    <a class="logo mobile-menu__logo link" href="/">
+                        <div class="logo-flex">
+                            Hell
+                            <svg class="logo__icon">
+                                <use href="./images/icons/sprite.svg#icon-campfire"></use>
+                            </svg>
+                            EN
+                        </div>
+                        <div class="logo__part logo__part--mobile">
+                            <span class="logo__part logo__part--lower">HELLISH</span>
+                            english
+                        </div>
+                    </a>
+                    <button type="button" class="menu-close-btn" data-menu-close>
+                        <svg class="header__icon-menu" width="25" height="25">
+                            <use class="header__icon-menu-close" href="./images/icons/sprite.svg#icon-btn-close"></use>
+                        </svg>
+                    </button>
+                    <ul class="mobile-menu__nav list">
+                        <li class="mobile-menu__item"><a class="mobile-menu__link link" href="#program">Studying program</a></li>
+                        <li class="mobile-menu__item"><a class="mobile-menu__link link" href="#about">About</a></li>
+                        <li class="mobile-menu__item"><a class="mobile-menu__link link" href="#options">Training options</a></li>
+                        <li class="mobile-menu__item"><a class="mobile-menu__link link" href="#contacts">Contacts</a></li>
+                    </ul>
+                    <button class="mobile-menu__modal-btn" type="button" data-modal-opens>consultation by phone</button>
+                </div>
+            </div> 
         </nav>
     </div>
 </header>
-
-<!--Когда будет создана папка js добавлю скрипты в index.html-->
-<!-- <script src="./js/menu.js"></script> -->
 
 <!--Скрипт для модального окна-->
 <!-- <script src="./js/modal.js"></script> -->
