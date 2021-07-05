@@ -1,10 +1,15 @@
+.problems {
+    background-image: linear-gradient(
+        to bottom,
+        var(--secondary-bcg-color) 78%,
+        var(--primary-bcg-color) 22%
+    );
+    color: var(--title-text-color);
+}
 .container {
     padding-top: 27px;
 }
-.problems {
-    background-color: var(--secondary-bcg-color);
-    color: var(--title-text-color);
-}
+
 h2 {
     @include style-text(800, 24px, 31px);
     letter-spacing: 0.03em;
@@ -15,16 +20,36 @@ h2 {
 }
 
 .problems__list {
-    background-color: var(--primary-bcg-color);
     color: var(--title-text-color);
+    @include style-text(700, 14px, 24px);
+    letter-spacing: 0.08em;
 }
 
 .container-small {
     max-width: 280px;
+    min-height: 100vh;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px 30px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: var(--primary-bcg-color);
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 }
+.problems__list {
+    counter-reset: section;
+}
+.problems__items {
+    margin-bottom: 10px;
+    color: var(--primary-text-color);
+    &::before {
+        display: block;
+        color: var(--accent-color);
+        counter-increment: section;
+        content: '\2014'' 0' counter(section);
+    }
+}
+
 @media screen and (min-width: 786px) {
 }
 @media screen and (min-width: 1366px) {
