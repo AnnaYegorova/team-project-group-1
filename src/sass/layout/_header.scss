@@ -1,9 +1,4 @@
-// .mobile-menu {
-//     display: none;
-// }
-
 .header {
-    // position: relative;
     padding-top: 30px;
     background-color: var(--primary-bcg-color);
 }
@@ -43,7 +38,6 @@
 
 .header__nav {
     display: flex;
-    // padding: 30px 20px;
     align-items: center;
     justify-content: space-between;
 }
@@ -76,16 +70,14 @@
 }
 
 .modal-btn {
-    // display: inline-block;
-    // padding: 36px 17px;
     align-items: center;
     text-align: center;
     cursor: pointer;
 
     font-family: inherit;
-    // @include style-text(700, 12px, 15px);
+    @include style-text(700, 12px, 15px);
 
-    // letter-spacing: 0.08em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--accent-color);
     border: 3px solid var(--accent-color);
@@ -94,14 +86,16 @@
 
     @media screen and (min-width: 768px) {
         margin-right: 40px;
-        padding: 15px 5px;
+        width: 260px;
+        padding: 5px 15px;
         @include style-text(700, 14px, 17px);
         letter-spacing: 0.14em;
     }
     @media screen and (min-width: 1366px) {
-        padding: 24px 46px;
+        padding: 24px 27px;
         margin-right: 0;
         margin-left: 60px;
+        width: 336px;
     }
     &:hover,
     &:focus {

@@ -107,4 +107,7 @@
         margin-left: auto;
         margin-right: auto;
     }
+    .mobile-menu__link {
+        @include style-text(800, 26px, 47px);
+    }
 }
