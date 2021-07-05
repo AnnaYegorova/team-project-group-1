@@ -1,0 +1,6 @@
+.problems {
+    background-color: var(--secondary-bcg-color);
+    color: var(--title-text-color);
+    @include style-text(800, 24px, 31px);
+    letter-spacing: 0.03em;
+}
