@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .reviews {
     &-title {
         font-family: Montserrat;
@@ -88,4 +89,16 @@
             @include style-text(800, 26px, 34px);
         }
     }
+=======
+.reviews-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #111518;
+    margin-bottom: 14px;
+>>>>>>> Stashed changes
 }
