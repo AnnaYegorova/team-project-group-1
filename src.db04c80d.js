@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/contacts/contacts-mob-320.png":[["contacts-mob-320.73082eff.png","fwJb"],"fwJb"],"./../images/contacts/contacts-tabl-768.png":[["contacts-tabl-768.d0f1772c.png","gaiA"],"gaiA"],"./../images/contacts/contacts-desc-1679.png":[["contacts-desc-1679.7521670a.png","TiGY"],"TiGY"],"./../images/contacts/contacts-mob-640.png":[["contacts-mob-640.56abfd3c.png","YlDH"],"YlDH"],"./../images/contacts/contacts-tabl-1536.png":[["contacts-tabl-1536.fe094a57.png","BdEr"],"BdEr"],"./../images/contacts/contacts-desc-3358.png":[["contacts-desc-3358.4713f536.png","EzdP"],"EzdP"],"./../images/hero/vector-hero.svg":[["vector-hero.74760396.svg","EKZ1"],"EKZ1"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/team-project-group-1/src.e6f4a453.js.map
+//# sourceMappingURL=/team-project-group-1/src.db04c80d.js.map
