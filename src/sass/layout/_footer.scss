@@ -39,6 +39,8 @@
     margin-bottom: 40px;
 }
 .footer__tel{
+    display: flex;
+    align-items: center;
     text-decoration: none;
     font-style: normal;
     font-weight: 600;
@@ -81,8 +83,6 @@
         margin-bottom: 0;
     }
     .footer__tel{
-        display: flex;
-        align-items: center;
         font-size: 20px;
     }
     
@@ -101,7 +101,10 @@
 }
 @media screen and (min-width: 1366px){
     .footer{
-        max-width: 1680px;
+        //  max-width: 1680px;
+        //  width: 100%;
+        //  min-width: 1366px;
+        max-width: none;
     }
     .footer__contacts{
        height: 200px; 
@@ -110,6 +113,8 @@
     }
     .footer__list{
         margin: 125px auto 35px auto;
+        justify-content: center;
+        align-items: flex-end;
     }
     .footer__tel{
         font-size: 30px;
