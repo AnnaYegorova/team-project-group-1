@@ -1,0 +1,48 @@
+.benefits {
+    background-image: linear-gradient(
+        to bottom,
+        var(--secondary-bcg-color) 70%,
+        var(--primary-bcg-color) 30%
+    );
+}
+
+.benefits > .container {
+    padding-top: 0px;
+    padding-bottom: 40px;
+}
+.benefits h2 {
+    color: var(--title-text-color);
+    @include style-text(800, 20px, 27px);
+    letter-spacing: 0.03em;
+    padding-bottom: 30px;
+}
+.container-small {
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: var(--primary-bcg-color);
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+}
+.benefits__list {
+    @include style-text(700, 14px, 24px);
+    letter-spacing: 0.08em;
+    counter-reset: section;
+}
+
+.benefits__items {
+    margin-top: 18px;
+    margin-bottom: 20px;
+    color: var(--primary-text-color);
+    &::before {
+        display: block;
+        color: var(--accent-color);
+        counter-increment: section;
+        content: '\2014'' 0' counter(section);
+        @include style-text(700, 14px, 17px);
+        letter-spacing: 0.08em;
+        margin-bottom: 18px;
+    }
+}
