@@ -1,0 +1,113 @@
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(17, 21, 24, 0.9);
+    overflow: auto;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    &.is-open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        z-index: 99;
+    }
+}
+@media screen and (min-width: 1366px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+.mobile__menu-container {
+    position: relative;
+    padding-top: 30px;
+}
+
+.menu-close-btn {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.header__icon-menu-close {
+    fill: var(--title-text-color);
+
+    .menu-close-btn:hover &,
+    .menu-close-btn:focus & {
+        fill: var(--accent-color);
+    }
+}
+.mobile-menu__nav {
+    margin-top: 50px;
+}
+.mobile-menu__link {
+    font-family: var(--primary-font);
+    @include style-text(800, 20px, 36px);
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+.mobile-menu__link:not(:last-child) {
+    margin-bottom: 30px;
+}
+.mobile-menu__modal-btn {
+    display: flex;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 17px 36px;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+
+    font-family: inherit;
+    @include style-text(700, 12px, 15px);
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    border: 3px solid var(--accent-color);
+
+    background-color: transparent;
+    &:hover,
+    &:focus {
+        color: var(--title-text-color);
+        background-color: var(--accent-color);
+        box-shadow: 0px 4px 4px rgba(117, 11, 11, 0.15);
+    }
+}
+@media screen and (min-width: 768px) {
+    .mobile-menu__modal-btn {
+        display: none;
+    }
+    .mobile__menu-container {
+        padding-top: 42px;
+    }
+    .menu-close-btn {
+        top: 42px;
+        right: 0;
+    }
+    .mobile-menu__nav {
+        max-width: 332px;
+        margin-top: 72px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mobile-menu__link {
+        @include style-text(800, 26px, 47px);
+    }
+}
