@@ -11,3 +11,15 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+@media screen and (max-width: 1366px) {
+    .box-desc {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .box-tabl {
+        display: none;
+    }
+}
