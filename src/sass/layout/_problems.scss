@@ -6,6 +6,7 @@
     );
     color: var(--title-text-color);
 }
+
 .container {
     padding-top: 27px;
     padding-bottom: 50px;
@@ -30,7 +31,6 @@ h2 {
 
 .container-small {
     max-width: 280px;
-    min-height: 100vh;
     margin-left: auto;
     margin-right: auto;
     padding-top: 20px;
@@ -58,6 +58,14 @@ h2 {
 }
 
 @media screen and (min-width: 768px) {
+    .problems {
+        background-image: linear-gradient(
+            to bottom,
+            var(--secondary-bcg-color) 68%,
+            var(--primary-bcg-color) 32%
+        );
+    }
+
     .container {
         padding-top: 60px;
         padding-right: 42px;
@@ -85,12 +93,20 @@ h2 {
     }
 }
 @media screen and (min-width: 1366px) {
+    .problems {
+        background-image: linear-gradient(
+            to bottom,
+            var(--secondary-bcg-color) 78%,
+            var(--primary-bcg-color) 22%
+        );
+    }
+
     .container {
         max-width: 1323px;
         padding-top: 114px;
         // padding-left: 177px;
         // padding-right: 177px;
-        padding-bottom: 63px;
+        padding-bottom: 100px;
 
         // Картинка огня
         // background-image: url('../images/icons/noun_campfire_background.svg');
