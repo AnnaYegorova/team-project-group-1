@@ -1,0 +1,193 @@
+.reviews {
+    &-title {
+        font-family: Montserrat;
+        @include style-text(800, 20px, 26px);
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #111518;
+        padding: 0;
+    }
+
+    &-menu {
+        width: 100%;
+        height: 562px;
+        background: #ffffff;
+        box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+        margin-bottom: 20px;
+        padding: 16px 20px 30px;
+    }
+
+    &-social {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-social-img {
+        margin-bottom: 20px;
+    }
+
+    &-social-link {
+        cursor: pointer;
+
+        & :hover,
+        & :focus {
+            fill: var(--accent-color);
+        }
+    }
+
+    &-social-icon {
+        width: 30px;
+        height: 30px;
+        fill: #436eab;
+        margin-bottom: 20px;
+    }
+
+    &-graduates-title {
+        font-family: Montserrat;
+        @include style-text(800, 14px, 17px);
+        text-align: center;
+        color: var(--accent-color);
+        margin-bottom: 10px;
+    }
+
+    &-graduates-education {
+        font-family: Montserrat;
+        @include style-text(500, 12px, 15px);
+        text-align: center;
+        color: #b9b9b9;
+        margin-bottom: 25px;
+    }
+
+    &-graduates-text {
+        font-family: Montserrat;
+        @include style-text(500, 12px, 20px);
+        text-align: center;
+        color: #3d3d3d;
+    }
+
+    &-graduates-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    &-graduates-menu-item {
+        margin-left: 5px;
+        cursor: pointer;
+
+        &:not(:last-child) {
+            margin-right: 5px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .reviews {
+        &-title {
+            @include style-text(800, 26px, 34px);
+            margin-bottom: 30px;
+        }
+
+        &-graduates-title {
+            @include style-text(800, 20px, 24px);
+            margin-bottom: 20px;
+            text-align: start;
+        }
+
+        &-graduates-education {
+            margin-bottom: 20px;
+            text-align: start;
+        }
+
+        &-graduates-text {
+            text-align: start;
+        }
+
+        &-menu {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px 40px 30px;
+            height: 314px;
+            margin-bottom: 30px;
+        }
+
+        &-graduates {
+            width: 412px;
+        }
+
+        &-graduates-menu-item {
+            margin-left: 15px;
+
+            &:not(:last-child) {
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .reviews {
+        &-title {
+            @include style-text(800, 46px, 60px);
+            margin-bottom: 50px;
+        }
+
+        &-graduates-title {
+            @include style-text(800, 30px, 36px);
+            margin-bottom: 10px;
+            text-align: start;
+        }
+
+        &-graduates-education {
+            @include style-text(500, 14px, 17px);
+        }
+
+        &-graduates-text {
+            @include style-text(500, 18px, 28px);
+        }
+
+        &-menu {
+            padding: 50px 112px 51px 82px;
+            height: 370px;
+            width: 1090px;
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+
+        &-graduates {
+            width: 706px;
+        }
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .box-desct {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .left-mob {
+        display: none;
+    }
+
+    .right-mob {
+        display: none;
+    }
+}
+
+.left-mob {
+    color: var(--accent-color);
+    height: 35px;
+    width: 33px;
+    font-size: 30px;
+}
+
+.right-mob {
+    color: var(--accent-color);
+    height: 35px;
+    width: 30px;
+    font-size: 30px;
+}

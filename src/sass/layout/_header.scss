@@ -1,0 +1,106 @@
+.header {
+    padding-top: 30px;
+    background-color: var(--primary-bcg-color);
+}
+
+@media screen and (max-width: 1365px) {
+    .nav-menu {
+        display: none;
+    }
+}
+
+.header--wrap {
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width: 767px) {
+    .modal-btn {
+        display: none;
+    }
+}
+
+.header__mobile-menu-btn {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    @media screen and (min-width: 1366px) {
+        display: none;
+    }
+}
+.header__mobile-menu-btn:hover .header__icon-menu-burger,
+.header__mobile-menu-btn:focus .header__icon-menu-burger {
+    fill: var(--accent-color);
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media screen and (min-width: 1366px) {
+    .header__nav {
+        justify-content: flex-end;
+    }
+    .nav-menu {
+        display: flex;
+    }
+    .logo {
+        margin-right: 150px;
+    }
+    .nav-menu__item:not(:last-child) {
+        margin-right: 60px;
+    }
+    .nav-menu__link {
+        font-family: var(--primary-font);
+        @include style-text(700, 14px, 17px);
+        text-transform: uppercase;
+
+        color: var(--secondary-text-color);
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25),
+                0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+}
+
+.modal-btn {
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+
+    font-family: inherit;
+    @include style-text(700, 12px, 15px);
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    border: 3px solid var(--accent-color);
+
+    background-color: transparent;
+
+    @media screen and (min-width: 768px) {
+        margin-right: 40px;
+        width: 260px;
+        padding: 5px 15px;
+        @include style-text(700, 14px, 17px);
+        letter-spacing: 0.14em;
+    }
+    @media screen and (min-width: 1366px) {
+        padding: 24px 27px;
+        margin-right: 0;
+        margin-left: 60px;
+        width: 336px;
+    }
+    &:hover,
+    &:focus {
+        color: var(--title-text-color);
+        background-color: var(--accent-color);
+        box-shadow: 0px 4px 4px rgba(117, 11, 11, 0.15);
+    }
+}
