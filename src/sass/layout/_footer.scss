@@ -56,19 +56,29 @@
     .footer{
         max-width: 1199px;
     }
+    .footer__logo{
+        padding-top: 0;
+    }
     .footer__contacts{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         margin-left: 40px;
         margin-right: 40px;
     }
     .footer__list{
         flex-direction: row;
-        
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+    .footer__item:not(:last-child){
+        margin-top: 0;
+        margin-bottom: 0;
     }
     .footer__tel{
         display: flex;
         align-items: center;
+        font-size: 20px;
     }
     
     .footer__tel::after {
@@ -92,11 +102,13 @@
     .footer__contacts{
        height: 200px; 
        margin-left: 0;
-       margin-right: 0;
-       
+             
     }
     .footer__list{
         margin: 125px auto 35px auto;
+    }
+    .footer__tel{
+        font-size: 30px;
     }
     .footer__copy{
         margin-bottom: 56px;
