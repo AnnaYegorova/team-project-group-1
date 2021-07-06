@@ -2,7 +2,7 @@
     max-width: 479px;
 }
 .footer__container{
-     padding-top: 0;
+    padding-top: 0;
     padding-bottom: 0;
 }
 .footer__contacts{
@@ -25,17 +25,16 @@
 .footer__copy {
     min-width: 320px;
     height: 70px;
-    background: #111518;
+    background: var(--primary-text-color);
     
 }
 .copy__text {
-    
+    font-family: var(--primary-font); 
     padding-left: 52px;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 70px;
-    color: #B9B9B9;
+    color: var(--secondary-text-color);
 }
 .footer__list {
     display: flex;
@@ -57,7 +56,7 @@
     font-size: 14px;
     line-height: 1.21;
     letter-spacing: 0.08em;
-    color: #111518;
+    color: var(--primary-text-color);
 }
 .footer__tel-icon {
     width: 20px;
@@ -81,8 +80,8 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        // margin-left: 40px;
-        // margin-right: 40px;
+        margin-left: 40px;
+        margin-right: 40px;
     }
     .footer__list{
         flex-direction: row;
@@ -129,11 +128,9 @@
        margin-left: 0;
              
     }
-    .footer__logo{
-        margin-bottom: 53px;
-    }
+    
     .footer__list{
-        margin: 125px auto 35px auto;
+        margin: 125px auto 35px 150px;
         justify-content: center;
         align-items: flex-end;
     }
@@ -149,6 +146,8 @@
         margin-bottom: 56px;
     }
     .footer__logo{
+        margin-bottom: 53px;
+        margin-right: 0;
         margin-top: 100px;
         padding-top: 0;
         padding-left: 183px;
