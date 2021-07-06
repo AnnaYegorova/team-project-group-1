@@ -28,4 +28,9 @@ img {
 body {
     font-family: var(--primary-font);
     color: var(--primary-text-color);
+    letter-spacing: 0.08em;
+}
+
+.accent-color {
+    color: var(--accent-color);
 }

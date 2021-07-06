@@ -1,0 +1,145 @@
+.problems {
+    background-image: linear-gradient(
+        to bottom,
+        var(--secondary-bcg-color) 78%,
+        var(--primary-bcg-color) 22%
+    );
+    color: var(--title-text-color);
+}
+
+.container {
+    padding-top: 27px;
+    padding-bottom: 50px;
+}
+ul {
+    list-style: none;
+}
+h2 {
+    @include style-text(800, 24px, 31px);
+    letter-spacing: 0.03em;
+    padding-bottom: 39px;
+}
+.problems__text-accent-color {
+    color: var(--accent-color);
+}
+
+.problems__list {
+    color: var(--title-text-color);
+    @include style-text(700, 14px, 24px);
+    letter-spacing: 0.08em;
+}
+
+.container-small {
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: var(--primary-bcg-color);
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+}
+.problems__list {
+    counter-reset: section;
+}
+.problems__items {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: var(--primary-text-color);
+    &::before {
+        display: block;
+        color: var(--accent-color);
+        counter-increment: section;
+        content: '\2014'' 0' counter(section);
+        @include style-text(700, 14px, 17px);
+        letter-spacing: 0.08em;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .problems {
+        background-image: linear-gradient(
+            to bottom,
+            var(--secondary-bcg-color) 68%,
+            var(--primary-bcg-color) 32%
+        );
+    }
+
+    .container {
+        padding-top: 60px;
+        padding-right: 42px;
+        // padding-left: 158px;
+    }
+    .container-small {
+        min-width: 688px;
+        padding-top: 40px;
+        padding-left: 96px;
+        padding-right: 96px;
+        padding-bottom: 20px;
+        margin: 0 auto;
+    }
+    .problems__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -30px;
+        margin-right: -30px;
+    }
+    .problems__items {
+        width: calc((100% - 60px) / 2);
+        margin-top: 30px;
+        margin-right: 30px;
+        margin-bottom: 0;
+    }
+}
+@media screen and (min-width: 1366px) {
+    .problems {
+        background-image: linear-gradient(
+            to bottom,
+            var(--secondary-bcg-color) 78%,
+            var(--primary-bcg-color) 22%
+        );
+    }
+
+    .container {
+        max-width: 1323px;
+        padding-top: 114px;
+        // padding-left: 177px;
+        // padding-right: 177px;
+        padding-bottom: 100px;
+
+        // Картинка огня
+        // background-image: url('../images/icons/noun_campfire_background.svg');
+        // background-repeat: no-repeat;
+        // background-position: right -130px bottom 176px;
+    }
+
+    h2 {
+        @include style-text(800, 46px, 60px);
+        letter-spacing: 0.03em;
+    }
+    .container-small {
+        max-width: 1323px;
+        padding-top: 68px;
+        padding-left: 115px;
+        padding-right: 115px;
+        padding-bottom: 60px;
+        margin: 0 auto;
+    }
+
+    .problems__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -40px;
+        margin-right: -40px;
+    }
+    .problems__items {
+        width: calc((100% - 120px) / 3);
+        margin-right: 40px;
+        margin-bottom: 0;
+        @include style-text(700, 20px, 28px);
+    }
+    .problems__items::before {
+        @include style-text(700, 20px, 33px);
+    }
+}

@@ -6,6 +6,9 @@
 @import './utils/visually-hidden';
 @import './utils/mixins';
 // Components
+@import './components/logo';
+@import './components/mobile-menu-nav';
+@import './components/modal-window';
 
 @import './layout/about';
 @import './layout/advantages';
