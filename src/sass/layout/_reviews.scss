@@ -81,3 +81,11 @@
         }
     }
 }
+
+@media screen and (min-width: 768px) {
+    .reviews {
+        &-title {
+            @include style-text(800, 26px, 34px);
+        }
+    }
+}
