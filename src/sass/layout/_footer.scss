@@ -10,6 +10,9 @@
 .footer__insta {
     display: block;
     margin: 0 auto; 
+    width: 40px;
+    height: 40px;
+    
 }
 .footer__copy {
     
@@ -54,7 +57,7 @@
 }
 @media screen and (min-width: 768px){
     .footer{
-        max-width: 1199px;
+        max-width: 1365px;
     }
     .footer__logo{
         padding-top: 0;
@@ -68,6 +71,8 @@
     }
     .footer__list{
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 40px;
         margin-top: 40px;
     }
@@ -94,10 +99,9 @@
         padding-left: 40px;
     }
 }
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1366px){
     .footer{
-        width: 1680px;
-      
+        max-width: 1680px;
     }
     .footer__contacts{
        height: 200px; 
