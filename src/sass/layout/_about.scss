@@ -1,0 +1,121 @@
+
+
+
+
+
+.list {
+list-style: none;
+}
+.link {
+text-decoration: none;
+}
+
+
+
+.teacher__profesion {
+font-family: Montserrat;
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+
+
+letter-spacing: 0.03em;
+
+color: var(--secondary-bcg-color);
+
+
+}
+
+.teacher__naeim-text {
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+line-height: 24px;
+letter-spacing: 0.08em;
+
+color: var(--secondary-bcg-color);
+
+
+}
+
+
+
+
+
+
+
+
+
+// .teacher__list-icon {
+//     fill: black;
+// }
+.teacher__list-icon-logotip {
+    fill: var(--accent-color);
+}
+.teacher__list {
+    display: block;
+    margin-right: 20px;
+}
+
+.teacher__list-icon-text {
+
+
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+letter-spacing: 0.06em;
+
+color: #111518;
+
+}
+
+.teacher__list-text-poragraf { 
+
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 26px;
+
+
+color: #B9B9B9;
+
+}
+
+
+.teacher__list-text-item {
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 20px;
+
+
+text-decoration-line: underline;
+
+color: var(--accent-color);  // color: var(—accent-colo)
+
+
+}
+
+
+
+// @media screen and (min-width: 480px) {
+
+// }
+
+
+
+// @media screen and (min-width: 768px) {
+
+// }
+
+// @media screen and (min-width: 1200px) {
+
+// }
+
+
+

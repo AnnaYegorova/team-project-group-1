@@ -1,0 +1,10 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-ramka-advanced-latop" viewBox="0 0 31 32">
+<path  stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.6154" d="M31.077 4.615v-4.308h-30.769v31.385h30.769v-4.308"></path>
+</symbol>
+<symbol id="icon-ramka-tel" viewBox="0 0 31 32">
+<path  stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.0159" d="M30.387 4.945v-4.183h-29.879v30.476h29.879v-4.183"></path>
+</symbol>
+</defs>
+</svg>
