@@ -161,3 +161,33 @@
         }
     }
 }
+
+@media screen and (max-width: 1366px) {
+    .box-desct {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .left-mob {
+        display: none;
+    }
+
+    .right-mob {
+        display: none;
+    }
+}
+
+.left-mob {
+    color: var(--accent-color);
+    height: 35px;
+    width: 33px;
+    font-size: 30px;
+}
+
+.right-mob {
+    color: var(--accent-color);
+    height: 35px;
+    width: 30px;
+    font-size: 30px;
+}
