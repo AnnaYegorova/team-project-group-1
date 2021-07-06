@@ -1,0 +1,87 @@
+
+
+
+
+
+.advantages__bloc-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 216px;
+    height: 245px;
+}
+
+.advantages__list {
+display: flex;
+position: relative;
+}
+.advantages__list::before {
+    content: "";
+    width: 59px;
+    height: 60px;
+    margin-right: 10px;
+    background-image: url("../images/icons/ramka-tel.svg");
+    background-size: cover;
+    fill: black;
+  }
+// .advantages__list-icon-logotip{
+    
+// }
+
+.advantages__list-icon {
+    position: absolute;
+    
+    fill: var(--accent-color);
+}
+
+.advantages__list-icon-logotip {
+    fill: var(--accent-color);
+
+
+    
+}
+
+.advantages__list-text {
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 20px;
+
+
+
+align-items: center;
+letter-spacing: 0.08em;
+
+color: var(--secondary-bcg-color);
+margin-left: 20px;
+}
+
+
+
+
+
+
+
+// @media screen and (min-width: ) {
+
+// }
+
+
+
+// @media screen and (min-width: ) {
+
+// }
+
+
+
+
+// @media screen and (min-width: ) {
+
+// }
+
+
+
+
+
+
+
