@@ -144,10 +144,6 @@
 }
 
 @media screen and (min-width: 1366px) {
-    .padding-container {
-        padding: 0px 135px;
-    }
-
     .contacts {
         min-width: 1366px;
         background-image: url('../images/contacts/contacts-desc-1679.png');
@@ -155,7 +151,7 @@
 
         &-title {
             @include style-text(800, 46px, 60px);
-            padding-top: 136px;
+            padding-top: 36px;
             margin: 0 0 48px;
         }
 
@@ -224,5 +220,23 @@
     .hero {
         background-image: url('../images/contacts/contacts-desc-3358.png');
         background-size: cover;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .box-desc {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .box-tablet {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .box-tablet {
+        display: none;
     }
 }
