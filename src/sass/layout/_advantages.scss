@@ -6,7 +6,7 @@
 .advantages__bloc-list {
     display: flex;
     flex-wrap: wrap;
-    width: 216px;
+   
     height: 245px;
 }
 
@@ -14,6 +14,7 @@
 display: flex;
 position: relative;
 }
+
 .advantages__list::before {
     content: "";
     width: 59px;
@@ -21,17 +22,33 @@ position: relative;
     margin-right: 10px;
     background-image: url("../images/icons/ramka-tel.svg");
     background-size: cover;
-    fill: black;
+ 
   }
-// .advantages__list-icon-logotip{
-    
-// }
+
 
 .advantages__list-icon {
     position: absolute;
-    
+    margin-left: 0 auto;
     fill: var(--accent-color);
+   
 }
+
+.svg-1-fase {
+ margin-left: 12px;
+    margin-top: 11px;
+}
+
+.svg-2-tel {
+    margin-left: 10px;
+    margin-top: 9px;
+}
+
+.svg-3-zont {
+    margin-left: 12px;
+    margin-top: 7px;
+}
+
+
 
 .advantages__list-icon-logotip {
     fill: var(--accent-color);
@@ -43,10 +60,9 @@ position: relative;
 .advantages__list-text {
 font-family: Montserrat;
 font-style: normal;
-font-weight: bold;
+font-weight: 800;
 font-size: 14px;
 line-height: 20px;
-
 
 
 align-items: center;
@@ -55,29 +71,39 @@ letter-spacing: 0.08em;
 color: var(--secondary-bcg-color);
 margin-left: 20px;
 }
+  
+
+@media screen and (min-width: 768px) {
+
+    .advantages__bloc-list {
+        display: flex;
+        justify-content: space-between;
+    }    
+
+}
 
 
 
+@media screen and (min-width: 1366px) {
+
+    .advantages__bloc-list {
+        display: flex;
+        justify-content: space-between;
+    }  
 
 
+    .advantages__list::before {
+        content: "";
+        width: 100px;
+        height: 102px;
+        margin-right: 10px;
+        background-image: url("../images/icons/ramka-tel.svg");
+        background-size: cover;
+     
+      }
+    
+}
 
-
-// @media screen and (min-width: ) {
-
-// }
-
-
-
-// @media screen and (min-width: ) {
-
-// }
-
-
-
-
-// @media screen and (min-width: ) {
-
-// }
 
 
 

@@ -1,121 +1,77 @@
-
-
-
-
-
-.list {
-list-style: none;
+.teacher {
+    padding-top: 39px;
+    padding-bottom: 50px;
 }
-.link {
-text-decoration: none;
+.teacher__bloc {
+    padding-top: 0;
+    padding-bottom: 0;
 }
-
-
-
 .teacher__profesion {
-font-family: Montserrat;
-font-style: normal;
-font-weight: 800;
-font-size: 20px;
-
-
-letter-spacing: 0.03em;
-
-color: var(--secondary-bcg-color);
-
-
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    font-family: var(--primary-font);
+    @include style-text(800, 20px, 26px);
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
 }
 
-.teacher__naeim-text {
-    font-family: Montserrat;
-font-style: normal;
-font-weight: 800;
-font-size: 20px;
-line-height: 24px;
-letter-spacing: 0.08em;
-
-color: var(--secondary-bcg-color);
-
-
+.teacher__name-text {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    @include style-text(800, 20px, 24px);
+    letter-spacing: 0.08em;
+    color: var(--primary-text-color);
 }
 
+.teacher__list-item {
+    position: relative;
+    @include style-text(600, 14px, 17px);
+    letter-spacing: 0.06em;
 
-
-
-
-
-
-
-
-// .teacher__list-icon {
-//     fill: black;
-// }
-.teacher__list-icon-logotip {
+    color: var(--primary-text-color);
+}
+.teacher__list-item:not(:last-child) {
+    margin-bottom: 40px;
+}
+.teacher__list-item::before {
+    position: absolute;
+    top: 0;
+    left: -26px;
+    display: block;
+    content: '';
+    width: 18px;
+    height: 14px;
+    background-image: url('../images/icons/vector.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     fill: var(--accent-color);
 }
-.teacher__list {
-    display: block;
-    margin-right: 20px;
+
+.teacher__about-poragraf {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    @include style-text(500, 12px, 26px);
+    color: var(--secondary-text-color);
+}
+.teacher__link {
+    font-family: var(--primary-font);
+    @include style-text(500, 12px, 20px);
+    text-decoration-line: underline;
+
+    color: var(--accent-color);
 }
 
-.teacher__list-icon-text {
-
-
-    font-family: Montserrat;
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 17px;
-letter-spacing: 0.06em;
-
-color: #111518;
-
+@media screen and (min-width: 768px) {
+    .about-posicion {
+        display: flex;
+    }
+    .teacher__foto {
+        width: 243px;
+        height: 305px;
+    }
 }
 
-.teacher__list-text-poragraf { 
-
-    font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 26px;
-
-
-color: #B9B9B9;
-
-}
-
-
-.teacher__list-text-item {
-    font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 20px;
-
-
-text-decoration-line: underline;
-
-color: var(--accent-color);  // color: var(—accent-colo)
-
-
-}
-
-
-
-// @media screen and (min-width: 480px) {
+// @media screen and (min-width: 1366px) {
 
 // }
-
-
-
-// @media screen and (min-width: 768px) {
-
-// }
-
-// @media screen and (min-width: 1200px) {
-
-// }
-
-
-
