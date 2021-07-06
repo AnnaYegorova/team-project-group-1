@@ -7,14 +7,12 @@
     color: var(--title-text-color);
 }
 
-.container {
+.problems__container {
     padding-top: 27px;
     padding-bottom: 50px;
 }
-ul {
-    list-style: none;
-}
-h2 {
+
+.problems__title {
     @include style-text(800, 24px, 31px);
     letter-spacing: 0.03em;
     padding-bottom: 39px;
@@ -29,7 +27,7 @@ h2 {
     letter-spacing: 0.08em;
 }
 
-.container-small {
+.problems__container-small {
     max-width: 280px;
     margin-left: auto;
     margin-right: auto;
@@ -66,12 +64,11 @@ h2 {
         );
     }
 
-    .container {
+    .problems__container {
         padding-top: 60px;
         padding-right: 42px;
-        // padding-left: 158px;
     }
-    .container-small {
+    .problems__container-small {
         min-width: 688px;
         padding-top: 40px;
         padding-left: 96px;
@@ -101,11 +98,11 @@ h2 {
         );
     }
 
-    .container {
+    .problems__container {
         max-width: 1323px;
         padding-top: 114px;
-        // padding-left: 177px;
-        // padding-right: 177px;
+        padding-left: 177px;
+        padding-right: 177px;
         padding-bottom: 100px;
 
         // Картинка огня
@@ -114,11 +111,11 @@ h2 {
         // background-position: right -130px bottom 176px;
     }
 
-    h2 {
+    .problems__title {
         @include style-text(800, 46px, 60px);
         letter-spacing: 0.03em;
     }
-    .container-small {
+    .problems__container-small {
         max-width: 1323px;
         padding-top: 68px;
         padding-left: 115px;
