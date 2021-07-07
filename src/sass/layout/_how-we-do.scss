@@ -19,6 +19,9 @@
     @media screen and (min-width: 768px) {
         text-align: start;
     }
+    @media screen and (min-width: 1366px) {
+        @include style-text(800, 46px, 60px);
+    }
 }
 .how-we-do__list {
     @media screen and (min-width: 480px) and (max-width: 768px) {
