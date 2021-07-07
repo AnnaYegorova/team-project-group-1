@@ -14,17 +14,31 @@
             height: 3000px;
             z-index: 1;
         }
-    }
 
-    &--photo::before {
-        position: absolute;
-        content: '';
-        top: 476px;
-        width: 760px;
-        height: 502px;
-        left: -270px;
-        background: tomato;
-        // background: url('../../images/program/program.jpg');
+        &--photo::before {
+            overflow: auto;
+            position: absolute;
+            content: '';
+            top: 476px;
+            width: 760px;
+            height: 502px;
+            left: -270px;
+            background-color: #111518;
+            background: url('../images/program/program.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+            @media screen and (min-width: 1366px) {
+                background: url('../images/program/program-desktop.png');
+
+                @media srceen and (min-device-pixel-ratio: 2) and (min-width: 1366px),
+                    (min-resolution: 192dpi) and (min-width: 1366px),
+                    (min-resolution: 2dppx) and (min-width: 1366px) {
+                    background: url('../images/program/program-desktop@2x.png');
+                }
+            }
+        }
     }
 }
 
@@ -32,6 +46,7 @@
     padding-bottom: 1px;
     padding-top: 50px;
 }
+
 .program__title {
     color: var(--title-text-color);
     @include style-text(800, 20px, 26px);
