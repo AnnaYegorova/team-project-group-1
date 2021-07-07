@@ -21,6 +21,16 @@
     @include style-text(800, 20px, 24px);
     letter-spacing: 0.08em;
     color: var(--primary-text-color);
+
+    &::after {
+        content: '';
+        display: block;
+        background-color: var(--secondary-text-color);
+        border: 1px solid var(--secondary-text-color);
+        margin-top: 10px;
+        margin-bottom: 20px;
+        height: 0px;
+    }
 }
 
 .teacher__list-item {
@@ -33,6 +43,11 @@
 .teacher__list-item:not(:last-child) {
     margin-bottom: 40px;
 }
+
+.teacher__list-item {
+    margin-left: 27px;
+}
+
 .teacher__list-item::before {
     position: absolute;
     top: 0;
@@ -48,42 +63,41 @@
     fill: var(--accent-color);
 }
 
-.teacher__thumb {
-    position: relative;
-}
-
 .teacher__about-poragraf {
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin-top: 38px;
+    margin-bottom: 10px;
     @include style-text(500, 12px, 26px);
     color: var(--secondary-text-color);
+
     &::before {
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         display: block;
-        top: -80;
-        left: 25;
         content: '\2014';
+        @include style-text(700, 20px, 33px);
         color: var(--accent-color);
     }
 }
+
 .teacher__link {
     font-family: var(--primary-font);
     @include style-text(500, 12px, 20px);
     text-decoration-line: underline;
-
     color: var(--accent-color);
 }
 
-@media screen and (min-width: 768px) {
-    .about-posicion {
-        display: flex;
-    }
-    .teacher__foto {
-        width: 243px;
-        height: 305px;
-    }
-}
+// .teacher__foto {
+//     width: 243px;
+//     height: 305px;
 
-// @media screen and (min-width: 1366px) {
+//     @media screen and (min-width: 480px) {
+//         max-width: 243px;
+//     }
 
+//     @media screen and (min-width: 768px) {
+//         max-width: 243px;
+//     }
+
+//     @media screen and (min-width: 1200px) {
+//         max-width: 530px;
+//     }
 // }
