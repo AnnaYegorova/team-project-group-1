@@ -106,6 +106,16 @@
         cursor: pointer;
         color: var(--title-text-color);
         border: none;
+        transition: background-color var(--transition-duration) var(--transition-timing-function),
+            color var(--transition-duration) var(--transition-timing-function),
+            box-shadow var(--transition-duration) var(--transition-timing-function);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+            background-color: #fff;
+            box-shadow: 0px 6px 6px rgba(255, 107, 9, 0.603);
+        }
     }
 }
 

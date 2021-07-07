@@ -11,7 +11,7 @@
     &-menu {
         width: 100%;
         height: 562px;
-        background: #ffffff;
+        background: var(--primary-bcg-color);
         box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
         margin-bottom: 20px;
         padding: 16px 20px 30px;
@@ -71,6 +71,7 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 50px;
+        position: relative;
     }
 
     &-graduates-menu-item {
@@ -79,6 +80,38 @@
 
         &:not(:last-child) {
             margin-right: 5px;
+        }
+
+        &::before {
+            position: absolute;
+            top: 16px;
+            left: 0px;
+            display: block;
+            content: '';
+            width: 25px;
+            height: 20px;
+            background-image: url('../images/icons/arrow-left.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            fill: var(--accent-color);
+            cursor: pointer;
+        }
+
+        &::after {
+            position: absolute;
+            top: 16px;
+            left: 254px;
+            display: block;
+            content: '';
+            width: 25px;
+            height: 20px;
+            background-image: url('../images/icons/arrow-ringht.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            fill: var(--accent-color);
+            cursor: pointer;
         }
     }
 }
@@ -123,6 +156,16 @@
             &:not(:last-child) {
                 margin-right: 15px;
             }
+
+            &::before {
+                top: -200px;
+                left: -12px;
+            }
+
+            &::after {
+                top: -200px;
+                left: 675px;
+            }
         }
     }
 }
@@ -159,6 +202,18 @@
         &-graduates {
             width: 706px;
         }
+
+        &-graduates-menu-item {
+            &::before {
+                top: -234px;
+                left: 40px;
+            }
+
+            &::after {
+                top: -234px;
+                left: 1250px;
+            }
+        }
     }
 }
 
@@ -166,28 +221,4 @@
     .box-desct {
         display: none;
     }
-}
-
-@media screen and (min-width: 768px) {
-    .left-mob {
-        display: none;
-    }
-
-    .right-mob {
-        display: none;
-    }
-}
-
-.left-mob {
-    color: var(--accent-color);
-    height: 35px;
-    width: 33px;
-    font-size: 30px;
-}
-
-.right-mob {
-    color: var(--accent-color);
-    height: 35px;
-    width: 30px;
-    font-size: 30px;
 }
