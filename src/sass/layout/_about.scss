@@ -48,11 +48,23 @@
     fill: var(--accent-color);
 }
 
+.teacher__thumb {
+    position: relative;
+}
+
 .teacher__about-poragraf {
     margin-top: 50px;
     margin-bottom: 30px;
     @include style-text(500, 12px, 26px);
     color: var(--secondary-text-color);
+    &::before {
+        margin-bottom: 10px;
+        display: block;
+        top: -100;
+        left: 25;
+        content: '\2014';
+        color: var(--accent-color);
+    }
 }
 .teacher__link {
     font-family: var(--primary-font);
