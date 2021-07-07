@@ -10,13 +10,13 @@
     padding-top: 0px;
     padding-bottom: 40px;
 }
-.benefits h2 {
+.benefits__title {
     color: var(--title-text-color);
     @include style-text(800, 20px, 27px);
     letter-spacing: 0.03em;
     padding-bottom: 30px;
 }
-.container-small {
+.benefits__container-small {
     max-width: 280px;
     margin-left: auto;
     margin-right: auto;
@@ -44,5 +44,15 @@
         @include style-text(700, 14px, 17px);
         letter-spacing: 0.08em;
         margin-bottom: 18px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .benefits__title {
+        @include style-text(800, 26px, 34px);
+        letter-spacing: 0.03em;
+    }
+    .benefits__list {
+        @include style-text(700, 14px, 24px);
+        letter-spacing: 0.08em;
     }
 }
