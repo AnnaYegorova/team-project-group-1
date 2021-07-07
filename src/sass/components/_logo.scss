@@ -53,3 +53,30 @@
         line-height: 10px;
     }
 }
+//Анимация
+@keyframes reduce_radius {
+    from {
+        r: 10;
+    }
+    to {
+        r: 3;
+    }
+}
+@keyframes change_fill {
+    0% {
+        fill: #49549e;
+    }
+    50% {
+        fill: #1bceb1;
+    }
+    75% {
+        fill: #1bce4f;
+    }
+    100% {
+        fill: #e08c0f;
+    }
+}
+
+.logo:hover .logo__icon {
+    animation: change_fill 1s, popup 2s;
+}
