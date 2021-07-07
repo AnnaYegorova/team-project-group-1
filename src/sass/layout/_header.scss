@@ -52,12 +52,15 @@
         margin-right: 150px;
     }
     .nav-menu__item:not(:last-child) {
-        margin-right: 60px;
+        margin-right: 40px;
     }
     .nav-menu__link {
         font-family: var(--primary-font);
         @include style-text(700, 14px, 17px);
         text-transform: uppercase;
+
+        transition: color var(--transtime-duration) var(--transition-timing-function),
+            text-shadow var(--transtime-duration) var(--transition-timing-function);
 
         color: var(--secondary-text-color);
         &:hover,
@@ -83,6 +86,10 @@
     border: 3px solid var(--accent-color);
 
     background-color: transparent;
+
+    transition: color var(--transtime-duration) var(--transition-timing-function),
+        background-color var(--transtime-duration) var(--transition-timing-function),
+        border var(--transtime-duration) var(--transition-timing-function);
 
     @media screen and (min-width: 768px) {
         margin-right: 40px;
