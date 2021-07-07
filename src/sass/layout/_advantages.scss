@@ -1,50 +1,40 @@
-
-
-
-
-
 .advantages__bloc-list {
     display: flex;
     flex-wrap: wrap;
-   width: 320px;
+    width: 320px;
     height: 245px;
 }
 
 .advantages__list {
-display: flex;
-position: relative;
-width: 320px;
-height: 60px;
-margin-top: 10px;
+    display: flex;
+    position: relative;
+    width: 320px;
+    height: 60px;
+    margin-top: 10px;
 }
 
 .advantages__list::before {
-    content: "";
+    content: '';
     width: 59px;
     height: 60px;
-   
-    background-image: url("../images/icons/ramka-tel.svg");
-    background-size: cover;
- 
-  }
 
+    background-image: url('../images/icons/ramka-tel.svg');
+    background-size: cover;
+}
 
 .advantages__list-icon {
     position: absolute;
     margin-left: 0 auto;
     fill: var(--accent-color);
-   
 }
 
-.advantages__list-icon-svg{
-     width: 34px;
+.advantages__list-icon-svg {
+    width: 34px;
     height: 38px;
 }
 
-
-
 .svg-1-fase {
- margin-left: 12px;
+    margin-left: 12px;
     margin-top: 11px;
 }
 
@@ -58,43 +48,33 @@ margin-top: 10px;
     margin-top: 9px;
 }
 
-
-
 .advantages__list-icon-logotip {
     fill: var(--accent-color);
-
-
-    
 }
 
 .advantages__list-text {
-font-family: Montserrat;
-font-style: normal;
-font-weight: 800;
-font-size: 14px;
-line-height: 20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 20px;
 
+    align-items: center;
+    letter-spacing: 0.08em;
 
-align-items: center;
-letter-spacing: 0.08em;
+    color: var(--secondary-bcg-color);
+    margin-left: 17px;
+    margin-top: 2px;
 
-color: var(--secondary-bcg-color);
-margin-left: 17px;
-margin-top: 2px;
-
-width: 189px;
-height: 60px;
-}
-  
-
-@media screen and (min-width: 768px) and (max-width: 1365px){
-
-.advantages__bloc{
-    width: 688px;
-    height: 245px;
+    width: 189px;
+    height: 60px;
 }
 
-
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+    .advantages__bloc {
+        width: 688px;
+        height: 245px;
+    }
 
     .advantages__bloc-list {
         width: 100%;
@@ -105,26 +85,21 @@ height: 60px;
         justify-content: center;
         align-items: center;
         margin-left: 30px;
+    }
 
-    }    
-
-
-  .advantages__list-text{
+    .advantages__list-text {
         width: 169px;
         height: 60px;
-      }
-
+    }
 }
 
-
-
 @media screen and (min-width: 1366px) {
-    .advantages{
-  width: 1366px;
-height: 245px;
+    .advantages {
+        //   width: 1366px;
+        height: 245px;
     }
     .advantages__bloc-list {
-      width: 100%;
+        width: 100%;
         display: flex;
         flex-wrap: nowrap;
         flex-direction: row;
@@ -132,77 +107,63 @@ height: 245px;
         justify-content: center;
         align-items: center;
         margin-left: 30px;
-
-    }  
+    }
 
     .advantages__list::before {
-        content: "";
+        content: '';
         width: 100px;
         height: 102px;
-        
+
         margin-right: 10px;
-        background-image: url("../images/icons/ramka-tel.svg");
+        background-image: url('../images/icons/ramka-tel.svg');
         background-size: cover;
-     
-      }
+    }
 
-      .advantages__list-icon-svg{
+    .advantages__list-icon-svg {
         width: 65px;
-       height: 69px;
-   }
+        height: 69px;
+    }
 
-   .advantages__list {
-    display: flex;
-    position: relative;
-    align-items: center;
-    // justify-content: center;
-    width: calc((100% - 60px) / 3);
+    .advantages__list {
+        display: flex;
+        position: relative;
+        align-items: center;
+        // justify-content: center;
+        width: calc((100% - 60px) / 3);
+    }
 
+    .svg-1-fase {
+        margin-left: 15px;
+        margin-top: 13px;
+    }
+
+    .svg-2-tel {
+        margin-left: 13px;
+        margin-top: 14px;
+    }
+
+    .svg-3-zont {
+        margin-left: 15px;
+        margin-top: 13px;
+    }
+
+    .advantages__list-text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 164.9%;
+        /* or 33px */
+        display: block;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.08em;
+
+        color: var(--secondary-bcg-color);
+        position: absolute;
+
+        margin-left: 85px;
+        width: 351px;
+        height: 65px;
+    }
 }
-    
-   .svg-1-fase {
-    margin-left: 15px;
-       margin-top: 13px;
-   }
-   
-   .svg-2-tel {
-       margin-left: 13px;
-       margin-top: 14px;
-   }
-   
-   .svg-3-zont {
-       margin-left: 15px;
-       margin-top: 13px;
-   }
-   
-   .advantages__list-text{
-
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 164.9%;
-    /* or 33px */
-    display: block;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.08em;
-    
-    color: var(--secondary-bcg-color);
-    position: absolute;
-
-margin-left: 85px;
-    width: 351px;
-    height: 65px;
-   }
-
-
-}
-
-
-
-
-
-
-
-
