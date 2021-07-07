@@ -4,7 +4,7 @@
 
 .guarantee-container {
     padding: 0;
-    padding-bottom: 23px;
+    margin-bottom: 50px;
 }
 
 .guarantee-title {
@@ -16,47 +16,79 @@
     margin-bottom: 30px;
 }
 
-.guarantee-box {
-    padding: 30px 20px 31px;
-}
-
 .guarantee-menu {
     background-color: #f1f1f1;
     width: 100%;
     padding: 30px 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .guarantee-menu-item {
     @include style-text(500, 12px, 20px);
     color: #3d3d3d;
     padding-left: 28px;
+    position: relative;
 
     &:not(:last-child) {
         border-left: 1px dashed #b9b9b9;
-        padding-bottom: 23px;
+        padding-bottom: 44px;
+    }
+
+    &::before {
+        position: absolute;
+        top: 0px;
+        left: -7px;
+        display: block;
+        content: '';
+        width: 15px;
+        height: 20px;
+        background-image: url('../images/icons/noun_campfire.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        fill: var(--accent-color);
     }
 }
 
-// &::before {
-//     content: '';
-//     width: 14px;
-//     height: 20px;
-//     margin-right: 10px;
-//     background-image: url('../images/icons/icon-noun_campfire');
-//     background-size: cover;
-//     fill: var(--accent-color);
-// }
+@media screen and (min-width: 768px) {
+    .guarantee-menu-item {
+        @include style-text(500, 12px, 28px);
+        padding-left: 32px;
 
-// @media screen and (min-width: 768px) {
+        &:not(:last-child) {
+            padding-bottom: 18px;
+        }
+    }
 
-// }
+    .guarantee-menu {
+        padding: 30px 50px 20px 79px;
+    }
+}
 
 @media screen and (min-width: 1366px) {
+    .guarantee-container {
+        max-width: 1343px;
+        margin-bottom: 106px;
+    }
+
     .guarantee-title {
         @include style-text(800, 46px, 60px);
+        margin-bottom: 50px;
     }
 
     .guarantee-menu-item {
         @include style-text(500, 20px, 28px);
+        padding-left: 42px;
+
+        &:not(:last-child) {
+            padding-bottom: 30px;
+        }
+
+        &::before {
+            width: 22px;
+            height: 30px;
+            left: -10px;
+        }
     }
 }
