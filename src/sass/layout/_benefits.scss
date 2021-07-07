@@ -11,6 +11,7 @@
     padding-bottom: 40px;
 }
 .benefits__title {
+    width: 200px;
     color: var(--title-text-color);
     @include style-text(800, 20px, 27px);
     letter-spacing: 0.03em;
@@ -47,12 +48,35 @@
     }
 }
 @media screen and (min-width: 768px) {
+    .benefits {
+        background-image: linear-gradient(
+            to bottom,
+            var(--secondary-bcg-color) 50%,
+            var(--primary-bcg-color) 50%
+        );
+    }
+
     .benefits__title {
+        width: 688px;
         @include style-text(800, 26px, 34px);
         letter-spacing: 0.03em;
+        text-align: center;
     }
     .benefits__list {
         @include style-text(700, 14px, 24px);
         letter-spacing: 0.08em;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .benefits {
+        background-image: linear-gradient(
+            to bottom,
+            var(--secondary-bcg-color) 53%,
+            var(--primary-bcg-color) 47%
+        );
+    }
+    .benefits__title {
+        display: none;
     }
 }
