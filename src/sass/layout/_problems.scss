@@ -99,16 +99,17 @@
     }
 
     .problems__container {
-        max-width: 1323px;
+        background-image: url('../images/icons/noun_campfire_background.svg');
+        background-repeat: no-repeat;
+        background-size: 390px 585px;
+        background-position: right bottom 97px;
+
+        max-width: 1691px;
+
         padding-top: 114px;
         padding-left: 177px;
         padding-right: 177px;
         padding-bottom: 100px;
-
-        // Картинка огня
-        // background-image: url('../images/icons/noun_campfire_background.svg');
-        // background-repeat: no-repeat;
-        // background-position: right -130px bottom 176px;
     }
 
     .problems__title {
