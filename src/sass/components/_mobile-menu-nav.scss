@@ -6,6 +6,7 @@
     height: 100vh;
     background-color: rgba(17, 21, 24, 0.9);
     overflow: auto;
+    transition: opacity var(--transtime-duration) var(--transition-timing-function);
 
     opacity: 0;
     visibility: hidden;
@@ -37,6 +38,7 @@
     border-color: transparent;
     background-color: transparent;
     cursor: pointer;
+    transition: fill var(--transtime-duration) var(--transition-timing-function);
 }
 
 .header__icon-menu-close {
@@ -55,6 +57,7 @@
     @include style-text(800, 20px, 36px);
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+    transition: color var(--transtime-duration) var(--transition-timing-function);
     &:hover,
     &:focus {
         color: var(--accent-color);
@@ -83,6 +86,9 @@
     border: 3px solid var(--accent-color);
 
     background-color: transparent;
+    transition: color var(--transtime-duration) var(--transition-timing-function),
+        background-color var(--transtime-duration) var(--transition-timing-function),
+        box-shadow var(--transtime-duration) var(--transition-timing-function);
     &:hover,
     &:focus {
         color: var(--title-text-color);
