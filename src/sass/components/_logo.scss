@@ -5,6 +5,10 @@
     letter-spacing: 0.04em;
 
     color: var(--primary-text-color);
+    &:hover,
+    &:focus {
+        text-shadow: var(--accent-color) 1px 0 5px;
+    }
 }
 .mobile-menu__logo {
     color: var(--title-text-color);
@@ -53,6 +57,7 @@
         line-height: 10px;
     }
 }
+
 //Анимация
 @keyframes reduce_radius {
     from {

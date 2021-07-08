@@ -1,6 +1,11 @@
 .header {
     padding-top: 30px;
     background-color: var(--primary-bcg-color);
+    @media screen and (min-width: 768px) {
+        .header {
+            padding-top: 40px;
+        }
+    }
 }
 
 @media screen and (max-width: 1365px) {
@@ -27,6 +32,7 @@
     border-color: transparent;
     background-color: transparent;
     cursor: pointer;
+    transition: fill var(--transtime-duration) var(--transition-timing-function);
     @media screen and (min-width: 1366px) {
         display: none;
     }
@@ -42,6 +48,9 @@
     justify-content: space-between;
 }
 @media screen and (min-width: 1366px) {
+    .header {
+        padding-top: 33px;
+    }
     .header__nav {
         justify-content: flex-end;
     }
@@ -49,7 +58,7 @@
         display: flex;
     }
     .logo {
-        margin-right: 150px;
+        margin-right: 144px;
     }
     .nav-menu__item:not(:last-child) {
         margin-right: 40px;
