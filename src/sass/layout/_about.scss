@@ -10,6 +10,7 @@
     padding-top: 0;
     padding-bottom: 0;
 }
+
 .teacher__profesion {
     margin-bottom: 20px;
     padding-bottom: 0;
@@ -44,6 +45,10 @@
         margin-top: 10px;
         margin-bottom: 20px;
         height: 0px;
+        @media screen and (min-width: 1366px) {
+            margin-top: 15px;
+            margin-bottom: 30px;
+        }
     }
 
     @media screen and (min-width: 768px) {
@@ -76,7 +81,7 @@
 }
 
 .teacher__list-item:not(:last-child) {
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 
     @media screen and (min-width: 768px) {
         margin-bottom: 35px;
@@ -103,7 +108,7 @@
 }
 
 .teacher__about-poragraf {
-    margin-top: 38px;
+    margin-top: 25px;
     margin-bottom: 10px;
     @include style-text(500, 12px, 26px);
     color: var(--secondary-text-color);
@@ -123,8 +128,8 @@
     }
 
     @media screen and (min-width: 1366px) {
-        margin-top: 30px;
-        margin-bottom: 37px;
+        margin-top: 40px;
+        margin-bottom: 30px;
         @include style-text(500, 18px, 28px);
     }
 }
@@ -134,9 +139,10 @@
     @include style-text(500, 12px, 20px);
     text-decoration-line: underline;
     color: var(--accent-color);
+    letter-spacing: normal;
 
     @media screen and (min-width: 1366px) {
-        margin-top: 30px;
+        margin-top: 20px;
         margin-bottom: 37px;
         @include style-text(500, 18px, 28px);
     }
@@ -169,6 +175,7 @@
     }
 
     @media screen and (min-width: 1366px) {
+        margin-left: 31px;
         width: 640px;
     }
 }
