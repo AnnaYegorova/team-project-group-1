@@ -1,8 +1,11 @@
+
+
 .advantages__bloc-list {
     display: flex;
     flex-wrap: wrap;
     width: 320px;
     height: 245px;
+    
 }
 
 .advantages__list {
@@ -45,7 +48,7 @@
 
 .svg-3-zont {
     margin-left: 12px;
-    margin-top: 9px;
+    margin-top: 12px;
 }
 
 .advantages__list-icon-logotip {
@@ -68,6 +71,15 @@
 
     width: 189px;
     height: 60px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 767px) {
+
+
+.advantages{
+    padding-bottom: 46px;
+}
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1365px) {
@@ -94,10 +106,17 @@
 }
 
 @media screen and (min-width: 1366px) {
+
+    
+        
     .advantages {
-        //   width: 1366px;
         height: 245px;
+       
+        margin-bottom: 70px;
     }
+
+
+
     .advantages__bloc-list {
         width: 100%;
         display: flex;
@@ -107,6 +126,8 @@
         justify-content: center;
         align-items: center;
         margin-left: 30px;
+
+        
     }
 
     .advantages__list::before {
@@ -119,10 +140,33 @@
         background-size: cover;
     }
 
-    .advantages__list-icon-svg {
-        width: 65px;
-        height: 69px;
+    .icon-svg-1-fase {
+        width: 40px;
+        height: 46px;
     }
+    .svg-1-fase {
+        margin-left: 27px;
+        margin-top: 6px;
+    }
+
+.icon-svg-2-tel{
+    width: 46px;
+    height: 47px;
+}
+  .svg-2-tel {
+        margin-left: 22px;
+        margin-top: 6px;
+    }
+
+.icon-svg-3-zont{
+    width: 41px;
+    height: 50px;
+}
+  .svg-3-zont {
+        margin-left: 28px;
+        margin-top: 6px;
+    }
+
 
     .advantages__list {
         display: flex;
@@ -132,20 +176,9 @@
         width: calc((100% - 60px) / 3);
     }
 
-    .svg-1-fase {
-        margin-left: 15px;
-        margin-top: 13px;
-    }
 
-    .svg-2-tel {
-        margin-left: 13px;
-        margin-top: 14px;
-    }
-
-    .svg-3-zont {
-        margin-left: 15px;
-        margin-top: 13px;
-    }
+  
+  
 
     .advantages__list-text {
         font-family: Montserrat;
@@ -153,7 +186,7 @@
         font-weight: bold;
         font-size: 20px;
         line-height: 164.9%;
-        /* or 33px */
+        
         display: block;
         display: flex;
         align-items: center;
@@ -165,5 +198,8 @@
         margin-left: 85px;
         width: 351px;
         height: 65px;
+
+
+
     }
 }
