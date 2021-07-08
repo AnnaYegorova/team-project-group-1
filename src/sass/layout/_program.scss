@@ -2,49 +2,37 @@
     background-color: var(--primary-text-color);
     color: var(--secondary-text-color);
     position: relative;
+    height: 2050px;
+
+    @media screen and (min-width: 768px) {
+        height: 1355px;
+    }
 
     @media screen and (min-width: 1366px) {
+        height: 1237px;
         &::after {
             content: '';
             position: absolute;
             border-left: 1px solid #ffffff;
             transform: rotate(90deg);
-            top: -1291px;
+            top: -1221px;
             left: 500px;
             height: 3000px;
             z-index: 1;
-        }
-
-        &--photo::before {
-            overflow: auto;
-            position: absolute;
-            content: '';
-            top: 476px;
-            width: 760px;
-            height: 502px;
-            left: -270px;
-            background-color: #111518;
-            background: url('../images/program/program.png');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-
-            @media screen and (min-width: 1366px) {
-                background: url('../images/program/program-desktop.png');
-
-                @media srceen and (min-device-pixel-ratio: 2) and (min-width: 1366px),
-                    (min-resolution: 192dpi) and (min-width: 1366px),
-                    (min-resolution: 2dppx) and (min-width: 1366px) {
-                    background: url('../images/program/program-desktop@2x.png');
-                }
-            }
         }
     }
 }
 
 .program__container {
-    padding-bottom: 1px;
     padding-top: 50px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 60px;
+    }
+
+    @media screen and (min-width: 1366px) {
+        padding-top: 120px;
+    }
 }
 
 .program__title {
@@ -58,6 +46,7 @@
         @include style-text(800, 26px, 26px);
         text-align: start;
         padding-left: 40px;
+        margin-bottom: 52px;
     }
 
     @media screen and (min-width: 1366px) {
@@ -73,6 +62,52 @@
 
     @media screen and (min-width: 768px) {
         padding-left: 183px;
+    }
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 176px;
+        height: 137px;
+        background-image: url('../images/program/program.png');
+        background-repeat: no-repeat;
+        bottom: -96px;
+        right: -77px;
+        opacity: 50%;
+
+        @media srceen and (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background: url('../images/program/program@2x.png');
+        }
+
+        @media screen and (min-width: 768px) {
+            right: -115px;
+            bottom: -149px;
+            width: 384px;
+            height: 280px;
+            background-image: url('../images/program/program-tablet.png');
+
+            @media srceen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+                (min-resolution: 192dpi) and (min-width: 768px),
+                (min-resolution: 2dppx) and (min-width: 768px) {
+                background-image: url('../images/program/program-tablet@2x.png');
+            }
+        }
+
+        @media screen and (min-width: 1366px) {
+            left: -76px;
+            top: 217px;
+            width: 760px;
+            height: 502px;
+            background-image: url('../images/program/program-desktop.png');
+
+            @media srceen and (min-device-pixel-ratio: 2) and (min-width: 1366px),
+                (min-resolution: 192dpi) and (min-width: 1366px),
+                (min-resolution: 2dppx) and (min-width: 1366px) {
+                background-image: url('../images/program/program-desktop@2x.png');
+            }
+        }
     }
 }
 
@@ -90,8 +125,8 @@
     }
 
     @media screen and (min-width: 1366px) {
-        margin-bottom: 0px;
-        margin-right: 30px;
+        margin: 0;
+        width: 240px;
     }
 
     &:not(:last-child) {
@@ -107,6 +142,7 @@
 
             @media screen and (min-width: 768px) {
                 left: 103px;
+                height: 88.3%;
             }
 
             @media screen and (min-width: 1366px) {
