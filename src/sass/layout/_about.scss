@@ -1,7 +1,11 @@
 .teacher {
-    padding-top: 39px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
+
+    @media screen and (min-width: 1366px) {
+        margin-bottom: 130px;
+    }
 }
+
 .teacher__bloc {
     padding-top: 0;
     padding-bottom: 0;
@@ -13,6 +17,16 @@
     @include style-text(800, 20px, 26px);
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 30px;
+        @include style-text(800, 26px, 34px);
+    }
+
+    @media screen and (min-width: 1366px) {
+        margin-bottom: 50px;
+        @include style-text(800, 46px, 60px);
+    }
 }
 
 .teacher__name-text {
@@ -31,21 +45,46 @@
         margin-bottom: 20px;
         height: 0px;
     }
+
+    @media screen and (min-width: 768px) {
+        margin-top: 0;
+        margin-bottom: 20px;
+        @include style-text(800, 20px, 24px);
+    }
+
+    @media screen and (min-width: 1366px) {
+        margin-top: 0;
+        margin-bottom: 30px;
+        @include style-text(800, 30px, 37px);
+    }
 }
 
 .teacher__list-item {
     position: relative;
     @include style-text(600, 14px, 17px);
     letter-spacing: 0.06em;
-
     color: var(--primary-text-color);
+    margin-left: 27px;
+
+    @media screen and (min-width: 768px) {
+        @include style-text(600, 12px, 15px);
+    }
+
+    @media screen and (min-width: 1366px) {
+        @include style-text(600, 16px, 20px);
+    }
 }
+
 .teacher__list-item:not(:last-child) {
     margin-bottom: 40px;
-}
 
-.teacher__list-item {
-    margin-left: 27px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 35px;
+    }
+
+    @media screen and (min-width: 1366px) {
+        margin-bottom: 35px;
+    }
 }
 
 .teacher__list-item::before {
@@ -76,6 +115,18 @@
         @include style-text(700, 20px, 33px);
         color: var(--accent-color);
     }
+
+    @media screen and (min-width: 768px) {
+        margin-top: 30px;
+        margin-bottom: 24px;
+        @include style-text(500, 10px, 20px);
+    }
+
+    @media screen and (min-width: 1366px) {
+        margin-top: 30px;
+        margin-bottom: 37px;
+        @include style-text(500, 18px, 28px);
+    }
 }
 
 .teacher__link {
@@ -83,21 +134,41 @@
     @include style-text(500, 12px, 20px);
     text-decoration-line: underline;
     color: var(--accent-color);
+
+    @media screen and (min-width: 1366px) {
+        margin-top: 30px;
+        margin-bottom: 37px;
+        @include style-text(500, 18px, 28px);
+    }
 }
 
-// .teacher__foto {
-//     width: 243px;
-//     height: 305px;
+.about-posicion {
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
 
-//     @media screen and (min-width: 480px) {
-//         max-width: 243px;
-//     }
+    @media screen and (min-width: 1366px) {
+        display: flex;
+    }
+}
 
-//     @media screen and (min-width: 768px) {
-//         max-width: 243px;
-//     }
+.teacher__foto {
+    @media screen and (min-width: 768px) {
+        width: 243px;
+    }
 
-//     @media screen and (min-width: 1200px) {
-//         max-width: 530px;
-//     }
-// }
+    @media screen and (min-width: 1366px) {
+        width: 530px;
+    }
+}
+
+.teacher__about {
+    @media screen and (min-width: 768px) {
+        margin-left: 44px;
+        width: 400px;
+    }
+
+    @media screen and (min-width: 1366px) {
+        width: 640px;
+    }
+}
