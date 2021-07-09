@@ -14,13 +14,20 @@
     }
     @media screen and (min-width: 1366px) {
         position: relative;
-        top: -313px;
+        margin-bottom: 329px;
+        // top: -313px;
     }
 }
 
 .container__benefits {
     padding-top: 0px;
     padding-bottom: 40px;
+
+    @media screen and (min-width: 1366px) {
+        position: absolute;
+        top: -196px;
+        left: 577px;
+    }
 }
 .benefits__title {
     width: 200px;
