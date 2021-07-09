@@ -2,10 +2,12 @@
     background-color: var(--primary-text-color);
     color: var(--secondary-text-color);
     position: relative;
-    height: 2050px;
+    padding-bottom: 10px;
+    // height: 2050px;
 
     @media screen and (min-width: 768px) {
-        height: 1355px;
+        padding-bottom: 179px;
+        // height: 1355px;
     }
 
     @media screen and (min-width: 1366px) {
