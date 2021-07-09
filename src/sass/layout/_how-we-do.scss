@@ -1,18 +1,44 @@
 .how-we-do-section {
-    margin-bottom: 50px;
+    // margin-bottom: 130px;
     background-color: var(--primary-bcg-color);
+    @media screen and (min-width: 320px) {
+        margin-bottom: 50px;
+    }
+
+    @media screen and (min-width: 480px) {
+        margin-bottom: 50px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 50px;
+    }
 
     @media screen and (min-width: 1365px) {
         margin-bottom: 130px;
     }
 }
-
 .how-we-do__title {
-    @include style-text(800, 20px, 26px);
-    letter-spacing: 0.03em;
-    text-align: center;
-    margin: 0 0 30px 0;
+    font-family: var(--primary-font);
 
+    color: var(--secondary-bcg-color);
+    @media screen and (min-width: 320px) {
+        @include style-text(800, 20px, 26px);
+        letter-spacing: 0.03em;
+        text-align: center;
+        margin: 0 0 30px 0;
+    }
+    @media screen and (min-width: 480px) {
+        @include style-text(800, 20px, 26px);
+        letter-spacing: 0.03em;
+        text-align: center;
+        margin: 0 0 30px 0;
+    }
+    @media screen and (min-width: 768px) {
+        @include style-text(800, 26px, 34px);
+        letter-spacing: 0.03em;
+        text-align: center;
+        margin: 0 0 30px 0;
+    }
     @media screen and (min-width: 1366px) {
         text-align: start;
         @include style-text(800, 46px, 60px);
@@ -20,58 +46,62 @@
         margin: 0 0 50px 0;
     }
 }
-
 .how-we-do__list {
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+        justify-content: center;
+    }
     display: flex;
     flex-wrap: wrap;
-    margin-top: -15px;
-    margin-left: -15px;
-
-    @media screen and (max-width: 768px) {
-        margin-top: -30px;
-        margin-left: -15px;
-    }
-    @media screen and (min-width: 1366px) {
-        margin-top: -20px;
-        margin-left: -20px;
+    align-items: flex-start;
+    margin-top: -20px;
+    margin-left: -20px;
+    justify-content: center;
+    &:not(:last-child) {
+        justify-content: center;
     }
 }
 .how-we-do__card {
-    width: 100%;
-    margin-top: 15px;
-    margin-left: 15px;
-
-    @media screen and (min-width: 768px) {
-        flex-basis: calc(100% / 2 - 20px);
-        margin-top: 27px;
-        margin-left: 20px;
-    }
-
-    @media screen and (min-width: 1366px) {
-        flex-basis: calc(100% / 3 - 20px);
-    }
-
-    box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
-}
-
-.how-we-do__item {
-    width: 100%;
     display: block;
-    padding-top: 30px;
-    padding-left: 2px;
-    padding-right: 2px;
-    min-height: 280px;
+    width: calc((100% - 60px) / 3);
+    margin-top: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+
+    @media screen and (max-width: 1366px) {
+        width: 424px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1366px) {
+        width: calc((100% - 60px) / 2);
+    }
+
+    background: var(--primary-bcg-color);
+    box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+.how-we-do__card {
+    background-size: cover;
+    @media screen and (min-width: 320px) {
+        width: 100%;
+    }
+
+    @media screen and (min-width: 480px) {
+        width: 280px;
+        height: 280px;
+    }
 
     @media screen and (min-width: 768px) {
-        padding-top: 40px;
-        min-height: 334px;
+        width: 334px;
+        height: 334px;
     }
 
     @media screen and (min-width: 1365px) {
-        min-height: 396px;
+        width: 424px;
+        height: 396px;
     }
 }
-
+.how-we-do__item {
+    display: block;
+}
 .how-we-do__item:hover {
     background-color: var(--accent-color);
 }
@@ -97,11 +127,25 @@
     @media screen and (min-width: 320px) {
         display: flex;
         justify-content: center;
+        padding-top: 20px;
     }
 
     @media screen and (min-width: 480px) {
         display: flex;
         justify-content: center;
+        padding-top: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+    }
+
+    @media screen and (min-width: 1365px) {
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
     }
 }
 .how-we-do__icon-color {
@@ -123,45 +167,80 @@
 }
 .how-we-do__heading {
     font-family: var(--primary-font);
-    @include style-text(700, 14px, 20px);
-    text-align: center;
-    letter-spacing: 0.08em;
-    color: var(--primary-text-color);
 
+    color: var(--secondary-bcg-color);
     @media screen and (min-width: 320px) {
         padding-top: 20px;
         text-align: center;
     }
-
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 480px) {
         padding-top: 30px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+        letter-spacing: 0.08em;
+    }
+    @media screen and (min-width: 768px) {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 30px;
+        text-align: center;
+
+        letter-spacing: 0.08em;
     }
     @media screen and (min-width: 1366px) {
-        @include style-text(700, 20px, 28px);
+        padding-left: 30px;
+        padding-right: 30px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+        padding-top: 30px;
+        text-align: center;
+        letter-spacing: 0.08em;
     }
 }
 .how-we-do__description {
     font-family: var(--primary-font);
-    @include style-text(500, 12px, 20px);
-    text-align: center;
-    letter-spacing: 0.08em;
 
     color: var(--secondary-text-color);
+    background-size: cover;
+    @media screen and (min-width: 320px) {
+        width: 100%;
+    }
+
+    @media screen and (min-width: 480px) {
+        @include style-text(500, 12px, 20px);
+
+        padding-left: 11px;
+        padding-right: 11px;
+        text-align: center;
+        letter-spacing: 0.08em;
+    }
+
+    @media screen and (min-width: 768px) {
+        @include style-text(500, 12px, 20px);
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 0px;
+        text-align: center;
+        letter-spacing: 0.08em;
+    }
 
     @media screen and (min-width: 1366px) {
         @include style-text(500, 18px, 28px);
-        text-align: center;
-    }
-}
-.how-we-do__card-title {
-    @media screen and (min-width: 768px) {
-        padding-right: 25px;
-        padding-left: 25px;
-        padding-bottom: 53px;
-    }
-    @media screen and (min-width: 1366px) {
-        padding-right: 30px;
+        // padding-top: 20px;
         padding-left: 30px;
-        padding-bottom: 55px;
+        padding-right: 30px;
+        // padding-bottom: 55px;
+        text-align: center;
+        flex-direction: column;
+        letter-spacing: 0.08em;
     }
 }
