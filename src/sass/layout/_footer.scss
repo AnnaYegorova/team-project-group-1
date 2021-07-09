@@ -2,7 +2,6 @@
     max-width: 479px;
 }
 .footer__container {
-    padding: 0;
 }
 .footer__contacts {
     display: flex;
@@ -152,7 +151,6 @@
         height: 30px;
     }
     .footer__copy {
-        margin-bottom: 56px;
     }
     .footer .logo {
         margin: 0;
@@ -160,6 +158,7 @@
     .footer__logo {
     }
     .copy__text {
-        // padding-left: 183px;
+        margin-right: auto;
+        display: inline-block;
     }
 }
