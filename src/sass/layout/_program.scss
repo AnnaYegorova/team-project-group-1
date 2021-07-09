@@ -144,7 +144,7 @@
 
             @media screen and (min-width: 768px) {
                 left: 103px;
-                height: 87.3%;
+                height: 88.3%;
             }
 
             @media screen and (min-width: 1366px) {
@@ -202,11 +202,11 @@
         justify-content: space-between;
 
         &--one {
-            width: 364px;
+            width: 340px;
         }
 
         &--two {
-            width: 346px;
+            width: 324px;
         }
 
         &--three {
@@ -215,7 +215,7 @@
         }
 
         &--four {
-            width: 541px;
+            width: 540px;
             justify-content: start;
         }
     }
@@ -230,7 +230,7 @@
         }
 
         &--138 {
-            width: 138px;
+            width: 150px;
         }
 
         &--121 {
@@ -241,12 +241,12 @@
         }
 
         &--120 {
-            width: 120px;
+            width: 132px;
         }
 
         &--141 {
             width: 141px;
-            margin-left: 105px;
+            margin-left: 72px;
             margin-right: 64px;
 
             @media screen and (min-width: 1366px) {
@@ -265,7 +265,7 @@
 
         &--155 {
             width: 155px;
-            margin: 0 55px;
+            margin: 0 25px;
 
             @media screen and (min-width: 1366px) {
                 width: 240px;
@@ -279,16 +279,22 @@
     }
 }
 .kind__title {
+    @media screen and (min-width: 1366px) {
+        @include style-text(700, 20px, 33px);
+    }
     color: var(--accent-color);
-    @include style-text(700, 20px, 33px);
+
     letter-spacing: 0.08em;
     margin-bottom: 5px;
     margin-top: 8px;
 }
 .kind__item {
+    @media screen and (min-width: 1366px) {
+        @include style-text(500, 18px, 28px);
+    }
     color: var(--secondary-text-color);
     opacity: 0.5;
-    @include style-text(500, 18px, 28px);
+
     letter-spacing: 0.08em;
     &--width {
         width: 67px;
