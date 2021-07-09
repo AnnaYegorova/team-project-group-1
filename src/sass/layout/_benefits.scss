@@ -11,6 +11,7 @@
     @media screen and (min-width: 768px) and (max-width: 1365px) {
         position: relative;
         top: -1px;
+        margin-bottom: 276px;
     }
     @media screen and (min-width: 1366px) {
         position: relative;
@@ -21,6 +22,12 @@
 
 .container__benefits {
     padding-top: 0px;
+    @media screen and (min-width: 768px) and (max-width: 1365px) {
+        position: absolute;
+        top: 26px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 
     @media screen and (min-width: 1366px) {
         position: absolute;
