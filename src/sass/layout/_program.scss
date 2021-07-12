@@ -75,7 +75,7 @@
         background-repeat: no-repeat;
         bottom: -96px;
         right: -77px;
-        // opacity: 0.5;
+        z-index: 1;
 
         @media srceen and (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
@@ -99,10 +99,11 @@
 
         @media screen and (min-width: 1366px) {
             left: -191px;
-            top: 294px;
+            top: 338px;
             width: 760px;
             height: 502px;
             background-image: url('../images/program/program-desktop.png');
+            z-index: 0;
 
             @media srceen and (min-device-pixel-ratio: 2) and (min-width: 1366px),
                 (min-resolution: 192dpi) and (min-width: 1366px),
@@ -138,13 +139,13 @@
             border-left: 1px solid #ffffff;
             transform: translate(-50%);
             top: 20px;
-            left: 26%;
+            left: 73px;
             height: 91.3%;
             z-index: 1;
 
             @media screen and (min-width: 768px) {
                 left: 103px;
-                height: 88.3%;
+                height: 85.3%;
             }
 
             @media screen and (min-width: 1366px) {
@@ -199,14 +200,14 @@
 @media screen and (min-width: 768px) and (max-width: 1365px) {
     .semestr__list {
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
 
         &--one {
-            width: 340px;
+            width: 100%;
         }
 
         &--two {
-            width: 324px;
+            width: 100%;
         }
 
         &--three {
@@ -222,7 +223,9 @@
 }
 
 .semestr__item {
-    margin-bottom: 8px;
+    @media screen and (max-width: 767px) {
+        margin-bottom: 8px;
+    }
 
     @media screen and (min-width: 768px) and (max-width: 1365px) {
         &--143 {
@@ -231,6 +234,7 @@
 
         &--138 {
             width: 150px;
+            margin-left: 74px;
         }
 
         &--121 {
@@ -242,11 +246,12 @@
 
         &--120 {
             width: 132px;
+            margin-left: 100px;
         }
 
         &--141 {
             width: 141px;
-            margin-left: 72px;
+            margin-left: 100px;
             margin-right: 64px;
 
             @media screen and (min-width: 1366px) {
@@ -265,7 +270,7 @@
 
         &--155 {
             width: 155px;
-            margin: 0 25px;
+            margin: 0 50px;
 
             @media screen and (min-width: 1366px) {
                 width: 240px;
@@ -279,16 +284,23 @@
     }
 }
 .kind__title {
+    @media screen and (min-width: 768px) {
+        @include style-text(700, 12px, 20px);
+    }
+
     @media screen and (min-width: 1366px) {
         @include style-text(700, 20px, 33px);
     }
     color: var(--accent-color);
 
     letter-spacing: 0.08em;
-    margin-bottom: 5px;
-    margin-top: 8px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 .kind__item {
+    @media screen and (min-width: 768px) {
+        @include style-text(500, 12px, 20px);
+    }
     @media screen and (min-width: 1366px) {
         @include style-text(500, 18px, 28px);
     }

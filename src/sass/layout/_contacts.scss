@@ -18,12 +18,12 @@
         text-align: center;
         letter-spacing: 0.03em;
         color: var(--title-text-color);
-        padding-top: 50px;
-        margin: 0 0 50px;
+        padding-top: 56px;
+        margin-bottom: 24px;
     }
 
     &-text-menu {
-        margin-bottom: 30px;
+        margin-bottom: 44px;
     }
 
     &-text {
@@ -132,7 +132,7 @@
         &-title {
             @include style-text(800, 26px, 34px);
             padding-top: 50px;
-            margin: 0 0 70px;
+            margin: 0 0 50px;
         }
 
         &-text {
@@ -149,7 +149,7 @@
 
         &-input {
             width: 390px;
-            padding-bottom: 72px;
+            padding-bottom: 68px;
         }
     }
 }
@@ -162,8 +162,9 @@
 
         &-title {
             @include style-text(800, 46px, 60px);
-            padding-top: 36px;
-            margin: 0 0 48px;
+            padding-top: 100px;
+            margin: 0 auto 50px;
+            width: 1100px;
         }
 
         &-text {
@@ -171,16 +172,16 @@
         }
 
         &-text-menu {
-            margin-bottom: 54px;
+            margin-bottom: 56px;
         }
 
         &-input-menu {
-            margin: 0 0 78px;
+            margin: 0 0 80px;
         }
 
         &-input {
             width: 478px;
-            padding-bottom: 20px;
+            padding-bottom: 62px;
         }
 
         &-form-input {
@@ -234,10 +235,11 @@
     }
 }
 
-@media screen and (max-width: 1366px) {
-    .box-desc {
-        display: none;
-    }
+// // @media screen and (max-width: 1366px) {
+
+// }
+.box-desc {
+    display: none;
 }
 
 @media screen and (min-width: 1366px) {

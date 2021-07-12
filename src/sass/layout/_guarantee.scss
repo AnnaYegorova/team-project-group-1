@@ -38,16 +38,17 @@
 
         &::before {
             position: absolute;
-            top: 0px;
-            left: -7px;
+            top: -10px;
+            left: -8px;
             display: block;
             content: '';
             width: 15px;
-            height: 20px;
+            height: 35px;
             background-image: url('../images/icons/noun_campfire.svg');
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
+            background-color: #f1f1f1;
             fill: var(--accent-color);
         }
     }
@@ -92,7 +93,7 @@
 
             &::before {
                 width: 22px;
-                height: 30px;
+                height: 40px;
                 left: -10px;
             }
         }
