@@ -54,7 +54,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     list-style-type: none;
 }
 .footer__item:not(:last-child) {
@@ -86,8 +86,9 @@
     .footer {
         max-width: 1365px;
     }
-    .footer__logo {
-        padding-top: 0;
+    .footer .footer__logo {
+        padding: 40px 0;
+        margin-top: 0;
     }
     .footer__contacts {
         display: flex;
@@ -134,14 +135,14 @@
         max-width: none;
     }
     .footer__contacts {
-        padding: 25px 0;
         margin-left: 0;
+        align-items: center;
     }
 
     .footer__list {
         margin: 0 auto;
-        justify-content: center;
-        align-items: flex-end;
+        align-items: center;
+        margin-left: 290px;
     }
     .footer__tel {
         font-size: 30px;

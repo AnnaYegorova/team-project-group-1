@@ -1,5 +1,5 @@
 .logo {
-    display: block;
+    display: inline-block;
 
     @include style-text(800, 16px, 14px);
     letter-spacing: 0.04em;
